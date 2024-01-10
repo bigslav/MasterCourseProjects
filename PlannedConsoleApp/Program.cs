@@ -31,22 +31,32 @@ while (!isFinished)
         continue;
     }
 
-    // Set random text color
     ConsoleColor defaultTextColor = Console.ForegroundColor;
 
     Array consoleForegroundColors = Enum.GetValues<ConsoleColor>();
+
+    // Write characters one by one
+    foreach (var character in input) 
+    {
+        // Set random text color
+        ConsoleColor newRandomTextColor = GetRandomTextColor(consoleForegroundColors);
+        Console.ForegroundColor = newRandomTextColor;
+        Console.WriteLine(character);
+    }
+
+    // Set text color back to normal
+    Console.ForegroundColor = defaultTextColor;
+}
+
+ConsoleColor GetRandomTextColor(Array consoleForegroundColors) 
+{
     ConsoleColor newRandomTextColor;
+
     do
     {
         int randomIndex = random.Next(consoleForegroundColors.Length);
         newRandomTextColor = (ConsoleColor)consoleForegroundColors.GetValue(randomIndex);
-        Console.ForegroundColor = newRandomTextColor;
     } while (newRandomTextColor == Console.BackgroundColor);
 
-    // Write characters one by one
-    foreach (var character in input) 
-        Console.WriteLine(character);
-
-    // Set text color back to normal
-    Console.ForegroundColor = defaultTextColor;
+    return newRandomTextColor;
 }
