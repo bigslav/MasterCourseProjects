@@ -1,65 +1,52 @@
-﻿// "Library" - user can write down text key-value pairs and can output values by writing keys
+﻿using System.Drawing;
+
+// Program that asks for text input and outputs text's characters one by one in random color
 
 // Breakdown into steps
 
-// Reserve special characters for "command" and "exit"
-// Command => restart command scenario
-// Exit => exit app
-
-// Command scenario
-// Ask for command
-// command == set
-// // ask for key => repeat if invalid input
-// // ask for value => repeat if invalid input
-// command == get
-// // ask for key => repeat if invalid input
+// Greet user, instruct how program works
+Console.WriteLine("Hello! Write down something to get fancy text. Type QUIT to exit application.");
 
 
-Console.WriteLine("Write command to restart request\n" +
-                  "Write exit to exit program\n");
+Random random = new Random();
+bool isFinished = false;
 
-bool isExitCommand = false;
-
-while (!isExitCommand) 
+// Ask to write down text in loop
+while (!isFinished) 
 {
-    Console.WriteLine("Write set to make key-value entry\n" +
-                      "Write get to get entry value by key\n");
+    Console.Write(">> ");
+    string? input = Console.ReadLine();
 
-
-    string? userInput = RequestInput();
-
-    switch (userInput)
+    // Exit app if QUIT typed
+    if (input == "QUIT") 
     {
-        case "exit":
-            isExitCommand = true;
-            break;
-        case "command":
-            break;
-        case "get":
-            // start get
-            break;
-        case "set":
-            // start set
-            break;
-        default:
-            break;
-    }
-}
-
-string? RequestInput() 
-{
-    bool isValidInput = false;
-    string? userInput = "";
-
-    while (!isValidInput) 
-    { 
-        Console.Write(">> ");
-        
-        userInput = Console.ReadLine();
-
-        if (!String.IsNullOrEmpty(userInput))
-            isValidInput = true;
+        isFinished = true;
+        continue;
     }
 
-    return userInput;
+    // Validate text => if not valid ask again
+    if (String.IsNullOrEmpty(input)) 
+    {
+        Console.WriteLine("Empty input, try again.");
+        continue;
+    }
+
+    // Set random text color
+    ConsoleColor defaultTextColor = Console.ForegroundColor;
+
+    Array consoleForegroundColors = Enum.GetValues<ConsoleColor>();
+    ConsoleColor newRandomTextColor;
+    do
+    {
+        int randomIndex = random.Next(consoleForegroundColors.Length);
+        newRandomTextColor = (ConsoleColor)consoleForegroundColors.GetValue(randomIndex);
+        Console.ForegroundColor = newRandomTextColor;
+    } while (newRandomTextColor == Console.BackgroundColor);
+
+    // Write characters one by one
+    foreach (var character in input) 
+        Console.WriteLine(character);
+
+    // Set text color back to normal
+    Console.ForegroundColor = defaultTextColor;
 }
