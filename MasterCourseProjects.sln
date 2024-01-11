@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldNet5", "HelloWorl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsolePractice", "ConsolePractice\ConsolePractice.csproj", "{3972A559-5A16-43C9-A1E3-5C743A1799D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlannedConsoleApp", "PlannedConsoleApp\PlannedConsoleApp.csproj", "{ED1C4A94-46A2-4E96-9167-C906CB4D80EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlannedConsoleApp", "PlannedConsoleApp\PlannedConsoleApp.csproj", "{ED1C4A94-46A2-4E96-9167-C906CB4D80EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringPractice", "StringPractice\StringPractice.csproj", "{D0FCBE87-0139-431C-B75F-B0380D2A1B80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{ED1C4A94-46A2-4E96-9167-C906CB4D80EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED1C4A94-46A2-4E96-9167-C906CB4D80EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED1C4A94-46A2-4E96-9167-C906CB4D80EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
