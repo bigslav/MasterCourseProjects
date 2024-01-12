@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlannedConsoleApp", "Planne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringPractice", "StringPractice\StringPractice.csproj", "{D0FCBE87-0139-431C-B75F-B0380D2A1B80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntPractice", "IntPractice\IntPractice.csproj", "{1D54ABB7-D911-4005-B141-13E566494E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0FCBE87-0139-431C-B75F-B0380D2A1B80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D54ABB7-D911-4005-B141-13E566494E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D54ABB7-D911-4005-B141-13E566494E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D54ABB7-D911-4005-B141-13E566494E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D54ABB7-D911-4005-B141-13E566494E00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
