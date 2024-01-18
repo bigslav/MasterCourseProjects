@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolAndNullPractice", "Bool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesHomework", "VariablesHomework\VariablesHomework.csproj", "{B1ABD347-679B-41F2-A8B3-04A09F5C9FAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimePractice", "DateTimePractice\DateTimePractice.csproj", "{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{B1ABD347-679B-41F2-A8B3-04A09F5C9FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1ABD347-679B-41F2-A8B3-04A09F5C9FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1ABD347-679B-41F2-A8B3-04A09F5C9FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
