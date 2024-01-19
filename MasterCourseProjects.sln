@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoublePractice", "DoublePra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecimalPractice", "DecimalPractice\DecimalPractice.csproj", "{F0D74E30-5825-459C-B8BC-79F8D595598D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoolAndNullPractice", "BoolAndNullPractice\BoolAndNullPractice.csproj", "{97B5D787-EF40-4402-81C1-C349C25BA6D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoolAndNullPractice", "BoolAndNullPractice\BoolAndNullPractice.csproj", "{97B5D787-EF40-4402-81C1-C349C25BA6D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariablesHomework", "VariablesHomework\VariablesHomework.csproj", "{B1ABD347-679B-41F2-A8B3-04A09F5C9FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariablesHomework", "VariablesHomework\VariablesHomework.csproj", "{B1ABD347-679B-41F2-A8B3-04A09F5C9FAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimePractice", "DateTimePractice\DateTimePractice.csproj", "{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimePractice", "DateTimePractice\DateTimePractice.csproj", "{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateOnlyTimeOnlyPractice", "DateOnlyTimeOnlyPractice\DateOnlyTimeOnlyPractice.csproj", "{DEDE33A7-174C-4D99-A228-C4368F7C4D84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
