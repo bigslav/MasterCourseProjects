@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariablesHomework", "Variab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimePractice", "DateTimePractice\DateTimePractice.csproj", "{5576DD51-1D82-4F4D-90FF-F10CDAEA1EDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateOnlyTimeOnlyPractice", "DateOnlyTimeOnlyPractice\DateOnlyTimeOnlyPractice.csproj", "{DEDE33A7-174C-4D99-A228-C4368F7C4D84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateOnlyTimeOnlyPractice", "DateOnlyTimeOnlyPractice\DateOnlyTimeOnlyPractice.csproj", "{DEDE33A7-174C-4D99-A228-C4368F7C4D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeConversionsPractice", "TypeConversionsPractice\TypeConversionsPractice.csproj", "{2622ADE0-0692-4221-83E5-F3CAC19D61E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEDE33A7-174C-4D99-A228-C4368F7C4D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2622ADE0-0692-4221-83E5-F3CAC19D61E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2622ADE0-0692-4221-83E5-F3CAC19D61E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2622ADE0-0692-4221-83E5-F3CAC19D61E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2622ADE0-0692-4221-83E5-F3CAC19D61E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
