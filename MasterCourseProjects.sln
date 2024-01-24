@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeConversionsPractice", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeConversionsHomework", "TypeConversionsHomework\TypeConversionsHomework.csproj", "{1A47C11F-27A7-4009-808F-32897077E583}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicIfStatementsPractice", "BasicIfStatementsPractice\BasicIfStatementsPractice.csproj", "{4F039EAD-4579-4D55-ACA8-FA4FF6C95F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicIfStatementsPractice", "BasicIfStatementsPractice\BasicIfStatementsPractice.csproj", "{4F039EAD-4579-4D55-ACA8-FA4FF6C95F5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchPractice", "SwitchPractice\SwitchPractice.csproj", "{5821C227-F330-4E5B-9A3E-55CC5984F9C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{4F039EAD-4579-4D55-ACA8-FA4FF6C95F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F039EAD-4579-4D55-ACA8-FA4FF6C95F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F039EAD-4579-4D55-ACA8-FA4FF6C95F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5821C227-F330-4E5B-9A3E-55CC5984F9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5821C227-F330-4E5B-9A3E-55CC5984F9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5821C227-F330-4E5B-9A3E-55CC5984F9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5821C227-F330-4E5B-9A3E-55CC5984F9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
