@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuplesPractice", "TuplesPra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsHomework", "MethodsHomework\MethodsHomework.csproj", "{155076EA-AC21-40B0-BC66-51FAE5870F93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestBookMiniProject", "GuestBookMiniProject\GuestBookMiniProject.csproj", "{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{155076EA-AC21-40B0-BC66-51FAE5870F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{155076EA-AC21-40B0-BC66-51FAE5870F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{155076EA-AC21-40B0-BC66-51FAE5870F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
