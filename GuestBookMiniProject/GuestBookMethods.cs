@@ -60,6 +60,7 @@ public static class GuestBookMethods
     public static void PrintGuestList(List<Guest> guests)
     {
         Console.WriteLine("[GUEST LIST]");
+
         foreach (Guest guest in guests)
         {
             Console.WriteLine($"{guest.name} with {guest.companionsCount} companions");
