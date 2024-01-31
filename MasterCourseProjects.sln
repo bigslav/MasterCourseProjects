@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsHomework", "MethodsH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestBookMiniProject", "GuestBookMiniProject\GuestBookMiniProject.csproj", "{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BreakpointsPractice", "BreakpointsPractice\BreakpointsPractice.csproj", "{EA48AB69-6466-483B-8382-6F5CFA43C23F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsPractice", "ExceptionsPractice\ExceptionsPractice.csproj", "{F685CAD6-E5BF-4B24-972B-2F6805E0BD63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,14 @@ Global
 		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5A58983-EB97-4EE0-A5B3-2AE6601285A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA48AB69-6466-483B-8382-6F5CFA43C23F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA48AB69-6466-483B-8382-6F5CFA43C23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA48AB69-6466-483B-8382-6F5CFA43C23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA48AB69-6466-483B-8382-6F5CFA43C23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F685CAD6-E5BF-4B24-972B-2F6805E0BD63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F685CAD6-E5BF-4B24-972B-2F6805E0BD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F685CAD6-E5BF-4B24-972B-2F6805E0BD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F685CAD6-E5BF-4B24-972B-2F6805E0BD63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
