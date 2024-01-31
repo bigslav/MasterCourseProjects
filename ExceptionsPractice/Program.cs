@@ -1,59 +1,44 @@
-﻿try
+﻿int number = 0;
+
+try
 {
-    BadCall();
-    // is ignored, because of an exception in a first call
-    BadCallWithInfo();
+    int.TryParse(Console.ReadLine(), out number);
+    WrongArgumentCall(number);
 }
+// catches if == 0
+catch (ArgumentException ex) when (number == 0)
+{
+    Console.WriteLine(ex);
+}
+// catches if < 0
+catch (ArgumentException ex) when (number < 0)
+{
+    Console.WriteLine(ex);
+}
+// catches if > 0
 catch (Exception ex)
 {
-    Console.WriteLine(ex.Message);
-    Console.WriteLine(ex.StackTrace);
+    Console.WriteLine(ex);
+}
+finally
+{
+    Console.WriteLine("Try finished");
 }
 
 Console.ReadLine();
 
-try
+void WrongArgumentCall(int number)
 {
-    BadCallWithInfo();
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-    Console.WriteLine(ex.StackTrace);
-}
-
-void BadCall()
-{
-    int[] array = { 1, 2, 3, 4 };
-
-    for (int i = 0; i < 5; i++)
+    if (number < 0)
     {
-        try
-        {
-            Console.WriteLine(array[i]);
-        }
-        catch (Exception)
-        {
-            Console.WriteLine("BadCall");
-            throw;
-        }
+        throw new ArgumentException("Number is less than 0");
     }
-}
-
-void BadCallWithInfo()
-{
-    int[] array = { 1, 2, 3, 4 };
-
-    for (int i = 0; i < 5; i++)
+    else if (number == 0)
     {
-        try
-        {
-            Console.WriteLine(array[i]);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine("BadCallWithInfo");
-            throw new Exception("Outside of bounds of array", e);
-        }
+        throw new ArgumentException("Number is  0");
+    }
+    else
+    {
+        throw new ArgumentException("Something wrong with the number");
     }
 }
