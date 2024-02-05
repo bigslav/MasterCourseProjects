@@ -1,15 +1,9 @@
-﻿string name = string.Empty;
+﻿using ConsoleRequestDataLibrary;
+
+string name = string.Empty;
 int age = 0;
 
-bool isInputValid = false;
-while (!isInputValid)
-{
-    Console.Write("What's your name: ");
-    name = Console.ReadLine();
-
-    if (!string.IsNullOrEmpty(name))
-        isInputValid = true;
-}
+name = RequestData.RequestString("What's your name: ");
 
 bool isProfessor = false;
 
@@ -26,15 +20,7 @@ switch (name.ToLower())
 
 if (!isProfessor) 
 {
-    isInputValid = false;
-    while (!isInputValid)
-    {
-        Console.Write("What's your age: ");
-        isInputValid = int.TryParse(Console.ReadLine(), out age);
-
-        if (age < 0)
-            isInputValid = false;
-    }
+    age = RequestData.RequestInt("What's your age: ", IntType.PositiveOnly);
 
     if (age < 21)
         Console.WriteLine("Too young for a course!");
