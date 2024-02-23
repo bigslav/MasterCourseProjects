@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BattleshipsLibrary\BattleshipsLibrary.csproj" />
+      <ProjectReference Include="..\ConsoleRequestDataLibrary\ConsoleRequestDataLibrary.csproj" />
+    </ItemGroup>
+
 </Project>
