@@ -20,7 +20,7 @@ switch (name.ToLower())
 
 if (!isProfessor) 
 {
-    age = RequestData.RequestInt("What's your age: ", IntType.PositiveOnly);
+    age = RequestData.RequestInt("What's your age: ", IntType.Positive);
 
     if (age < 21)
         Console.WriteLine("Too young for a course!");
