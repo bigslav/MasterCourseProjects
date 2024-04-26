@@ -1,25 +1,20 @@
 namespace BattleshipsLibrary.Models;
 
-public enum CellState
-{
-    Empty,
-    ShipHealthy,
-    ShipHit
-}
-
 public class CellModel
 {
-    public CellState CellState => _cellState;
+    public bool isRevealed => _isRevealed;
+    public bool hasShip => _hasShip;
 
-    CellState _cellState;
+    bool _isRevealed;
+    bool _hasShip;
 
-    public CellModel(bool hasShip)
+    public void Reveal()
     {
-        _cellState = hasShip ? CellState.ShipHealthy : CellState.Empty;
+        _isRevealed = true;
     }
 
-    public void SetState(CellState cellState)
+    public void PlaceShip()
     {
-        _cellState = cellState;
+        _hasShip = true;
     }
 }

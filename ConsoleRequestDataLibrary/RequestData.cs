@@ -2,14 +2,16 @@
 {
     public enum IntType
     {
-        PositiveOnly,
-        NegativeOnly,
+        Positive,
+        Negative,
+        PositiveWithZero,
+        NegativeWithZero,
         Any
     }
 
     public static class RequestData
     {
-        public static string RequestString(string message) 
+        public static string RequestString(string message)
         {
             string output;
             bool isInputValid = false;
@@ -37,38 +39,83 @@
 
             do
             {
+                output = RequestInt(message);
+
+                switch (intType)
+                {
+                    case IntType.Positive:
+                        if (output <= 0)
+                        {
+                            isInputValid = false;
+                            Console.WriteLine("Invalid input (expected positive int)");
+                        }
+                        break;
+                    case IntType.Negative:
+                        if (output >= 0)
+                        {
+                            isInputValid = false;
+                            Console.WriteLine("Invalid input (expected negative int)");
+                        }
+                        break;
+                    case IntType.PositiveWithZero:
+                        if (output < 0)
+                        {
+                            isInputValid = false;
+                            Console.WriteLine("Invalid input (expected positive int or zero)");
+                        }
+                        break;
+                    case IntType.NegativeWithZero:
+                        if (output > 0)
+                        {
+                            isInputValid = false;
+                            Console.WriteLine("Invalid input (expected negative int or zero)");
+                        }
+                        break;
+                    case IntType.Any:
+                        break;
+                }
+            }
+            while (!isInputValid);
+
+            return output;
+        }
+
+        public static int RequestInt(string message, int minValue, int maxValue)
+        {
+            int output;
+            bool isInputValid = false;
+
+            do
+            {
+                output = RequestInt(message);
+
+                if (output < minValue || output > maxValue)
+                {
+                    Console.WriteLine($"Invalid input (not in required range [{minValue}, {maxValue}])");
+                }
+                else
+                {
+                    isInputValid = true;
+                }
+            } while (!isInputValid);
+
+            return output;
+        }
+
+        public static int RequestInt(string message)
+        {
+            int output;
+            bool isInputValid = false;
+
+            do
+            {
                 Console.WriteLine(message);
 
                 isInputValid = int.TryParse(Console.ReadLine(), out output);
 
-                if (isInputValid)
-                {
-                    switch (intType)
-                    {
-                        case IntType.PositiveOnly:
-                            if (output <= 0)
-                            {
-                                isInputValid = false;
-                                Console.WriteLine("Invalid input (expected positive int)");
-                            }
-                            break;
-                        case IntType.NegativeOnly:
-                            if (output >= 0)
-                            {
-                                isInputValid = false;
-                                Console.WriteLine("Invalid input (expected negative int)");
-                            }
-                            break;
-                        case IntType.Any:
-                            break;
-                    }
-                }
-                else
-                {
+                if (!isInputValid)
                     Console.WriteLine("Invalid input (expected int value)");
-                }
-            }
-            while (!isInputValid);
+            } while (!isInputValid);
 
             return output;
         }
