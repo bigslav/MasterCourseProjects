@@ -23,7 +23,7 @@ public static class PlayerHelpers
         return chosenPlayerIndex;
     }
 
-    public static string GetWinnerName(List<PlayerModel> players)
+    public static string TryGetWinnerName(List<PlayerModel> players)
     {
         return players.Count == 1 ? players.First().name : string.Empty;
     }
