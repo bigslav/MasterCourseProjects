@@ -32,6 +32,43 @@
             return output;
         }
 
+        public static string RequestString(string message, List<string> allowedResponses, bool isCaseSensitive = false)
+        {
+            string output;
+            bool isInputValid = false;
+
+            do
+            {
+                output = RequestString(message);
+
+                foreach (string response in allowedResponses)
+                {
+                    if (isCaseSensitive)
+                    {
+                        isInputValid = output == response;
+                    }
+                    else
+                    {
+                        isInputValid = string.Equals(output, response, StringComparison.CurrentCultureIgnoreCase);
+                    }
+
+                    if (isInputValid)
+                        break;
+                }
+
+                if (!isInputValid)
+                {
+                    Console.WriteLine("Invalid input (expected string value from listed below)");
+                    foreach (string response in allowedResponses)
+                    {
+                        Console.WriteLine(response);
+                    }
+                }
+            } while (!isInputValid);
+
+            return output;
+        }
+
         public static int RequestInt(string message, IntType intType)
         {
             int output;

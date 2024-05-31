@@ -4,10 +4,10 @@ namespace InheritanceMiniProject.Models;
 
 public abstract class InventoryItemModel : IInventoryItem
 {
-    public string UniqueName { get; set; }
+    public string Name { get; set; }
 
     protected InventoryItemModel(string uniqueName)
     {
-        UniqueName = uniqueName;
+        Name = uniqueName;
     }
 }
