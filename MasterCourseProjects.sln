@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AMLibrary", "AMLibrary\AMLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClassesHomework", "AbstractClassesHomework\AbstractClassesHomework.csproj", "{975CC78A-FD7B-4411-AA72-25BACF22342A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverridingHomework", "MethodOverridingHomework\MethodOverridingHomework.csproj", "{44055CD6-03C5-4CE2-8BF1-61743D561484}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{975CC78A-FD7B-4411-AA72-25BACF22342A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975CC78A-FD7B-4411-AA72-25BACF22342A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975CC78A-FD7B-4411-AA72-25BACF22342A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -307,5 +313,6 @@ Global
 		{2BFBEC08-A1E7-493B-A0AB-FB101B4811B7} = {3D09AC9E-48EB-4266-A8F5-5F844FBD548A}
 		{FCAE8810-0735-4A82-942C-C7A802233A2F} = {3D09AC9E-48EB-4266-A8F5-5F844FBD548A}
 		{975CC78A-FD7B-4411-AA72-25BACF22342A} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
+		{44055CD6-03C5-4CE2-8BF1-61743D561484} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
 	EndGlobalSection
 EndGlobal
