@@ -105,6 +105,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClassesHomework", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverridingHomework", "MethodOverridingHomework\MethodOverridingHomework.csproj", "{44055CD6-03C5-4CE2-8BF1-61743D561484}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPModifiersAbstractOverrides", "MPModifiersAbstractOverrides\MPModifiersAbstractOverrides.csproj", "{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44055CD6-03C5-4CE2-8BF1-61743D561484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -314,5 +320,6 @@ Global
 		{FCAE8810-0735-4A82-942C-C7A802233A2F} = {3D09AC9E-48EB-4266-A8F5-5F844FBD548A}
 		{975CC78A-FD7B-4411-AA72-25BACF22342A} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
 		{44055CD6-03C5-4CE2-8BF1-61743D561484} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
+		{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
 	EndGlobalSection
 EndGlobal
