@@ -1,10 +1,12 @@
-﻿using ConsoleRequestDataLibrary;
+﻿using ConsoleHelpers;
 
 string name = string.Empty;
 int age = 0;
 
-name = RequestData.RequestString("What's your name: ");
 
+name = "What's your name: ".RequestString();
+"What's your department? (Programming or Math)".RequestString(new List<string>{"programming", "math"});
+"What's your favorite case-sensitive string? (CHaKa or bObA)".RequestString(new List<string>{"CHaKa", "bObA"}, true);
 bool isProfessor = false;
 
 switch (name.ToLower()) 
@@ -20,7 +22,7 @@ switch (name.ToLower())
 
 if (!isProfessor) 
 {
-    age = RequestData.RequestInt("What's your age: ", IntType.Positive);
+    age = "What's your age: ".RequestInt(0, 120);
 
     if (age < 21)
         Console.WriteLine("Too young for a course!");

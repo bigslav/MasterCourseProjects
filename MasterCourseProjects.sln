@@ -59,7 +59,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreakpointsPractice", "Brea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionsPractice", "ExceptionsPractice\ExceptionsPractice.csproj", "{F685CAD6-E5BF-4B24-972B-2F6805E0BD63}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRequestDataLibrary", "ConsoleRequestDataLibrary\ConsoleRequestDataLibrary.csproj", "{73F4D252-40DA-4DF6-AAA1-FDBF6BB95DA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleHelpers", "ConsoleHelpers\ConsoleHelpers.csproj", "{73F4D252-40DA-4DF6-AAA1-FDBF6BB95DA4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InstantiatedClassesHomework", "InstantiatedClassesHomework\InstantiatedClassesHomework.csproj", "{703EBB98-D01C-43DD-A028-ED6D89345C22}"
 EndProject

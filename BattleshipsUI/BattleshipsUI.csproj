@@ -9,7 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\BattleshipsLibrary\BattleshipsLibrary.csproj" />
-      <ProjectReference Include="..\ConsoleRequestDataLibrary\ConsoleRequestDataLibrary.csproj" />
+      <ProjectReference Include="..\ConsoleHelpers\ConsoleHelpers.csproj" />
     </ItemGroup>
 
 </Project>

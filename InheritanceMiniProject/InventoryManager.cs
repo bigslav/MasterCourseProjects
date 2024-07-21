@@ -1,4 +1,4 @@
-using ConsoleRequestDataLibrary;
+using ConsoleHelpers;
 using InheritanceMiniProject.Models;
 
 namespace InheritanceMiniProject;
@@ -18,7 +18,7 @@ public class InventoryManager
 
     public void ProcessInventoryManagementStep()
     {
-        string response = RequestData.RequestString("\nWhat do you want to do? (Type Rent, Return, Purchase or Exit)",
+        string response = ConsoleHelpers.ConsoleHelpers.RequestString("\nWhat do you want to do? (Type Rent, Return, Purchase or Exit)",
             new List<string> {"Rent", "Return", "Purchase", "Exit"});
 
         switch (response.ToLower())
@@ -81,7 +81,7 @@ public class InventoryManager
             Console.WriteLine(name);
         }
 
-        string rentResponse = RequestData.RequestString("\nWhat do you want to rent? (Type item name from list above)", availableForRentItemNames, true);
+        string rentResponse = ConsoleHelpers.ConsoleHelpers.RequestString("\nWhat do you want to rent? (Type item name from list above)", availableForRentItemNames, true);
         _inventory.RentItem(rentResponse);
     }
 
@@ -94,7 +94,7 @@ public class InventoryManager
             Console.WriteLine(name);
         }
 
-        string returnResponse = RequestData.RequestString("\nWhat do you want to return? (Type item name from list above)", availableForReturnItemNames, true);
+        string returnResponse = ConsoleHelpers.ConsoleHelpers.RequestString("\nWhat do you want to return? (Type item name from list above)", availableForReturnItemNames, true);
         _inventory.ReturnItem(returnResponse);
     }
 
@@ -107,7 +107,7 @@ public class InventoryManager
             Console.WriteLine(item);
         }
 
-        string purchaseResponse = RequestData.RequestString("\nWhat do you want to purchase? (Type item name from list above)", availableForPurchaseItemNames, true);
+        string purchaseResponse = ConsoleHelpers.ConsoleHelpers.RequestString("\nWhat do you want to purchase? (Type item name from list above)", availableForPurchaseItemNames, true);
         _inventory.PurchaseItem(purchaseResponse);
     }
 }

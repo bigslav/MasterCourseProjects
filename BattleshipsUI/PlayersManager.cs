@@ -1,5 +1,5 @@
 using BattleshipsLibrary.Models;
-using ConsoleRequestDataLibrary;
+using ConsoleHelpers;
 
 namespace BattleshipsUI;
 
@@ -22,7 +22,7 @@ public class PlayersManager
 
     public void CreatePlayer()
     {
-        var player = new PlayerModel(RequestData.RequestString("Player name:"), _mapWidth, _mapHeight);
+        var player = new PlayerModel(ConsoleHelpers.ConsoleHelpers.RequestString("Player name:"), _mapWidth, _mapHeight);
 
         Console.WriteLine($"{player.name}, fill ships:");
 
@@ -35,8 +35,8 @@ public class PlayersManager
 
             do
             {
-                int horizontalPosition = RequestData.RequestInt($"Ship {i}: type in ship's horizontal position from 0 to {_mapWidth - 1}", 0, _mapWidth - 1);
-                int verticalPosition = RequestData.RequestInt($"Ship {i}: type in ship's vertical position from 0 to {_mapHeight - 1}", 0, _mapHeight - 1);
+                int horizontalPosition = ConsoleHelpers.ConsoleHelpers.RequestInt($"Ship {i}: type in ship's horizontal position from 0 to {_mapWidth - 1}", 0, _mapWidth - 1);
+                int verticalPosition = ConsoleHelpers.ConsoleHelpers.RequestInt($"Ship {i}: type in ship's vertical position from 0 to {_mapHeight - 1}", 0, _mapHeight - 1);
 
                 CellModel targetCell = player.map[horizontalPosition][verticalPosition];
 
@@ -70,8 +70,8 @@ public class PlayersManager
             MapVisualiser.ShowMap(defendingPlayer.map, true);
 
             Console.WriteLine($"{attackingPlayer.name} choose cell coordinates to attack:");
-            int horizontalPosition = RequestData.RequestInt($"Type in cell's horizontal position from 0 to {_mapWidth - 1}", 0, _mapWidth - 1);
-            int verticalPosition = RequestData.RequestInt($"Type in cell's vertical position from 0 to {_mapHeight - 1}", 0, _mapHeight - 1);
+            int horizontalPosition = ConsoleHelpers.ConsoleHelpers.RequestInt($"Type in cell's horizontal position from 0 to {_mapWidth - 1}", 0, _mapWidth - 1);
+            int verticalPosition = ConsoleHelpers.ConsoleHelpers.RequestInt($"Type in cell's vertical position from 0 to {_mapHeight - 1}", 0, _mapHeight - 1);
 
             CellModel chosenCell = defendingPlayer.map[horizontalPosition][verticalPosition];
 
