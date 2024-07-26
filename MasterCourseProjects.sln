@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodOverloadingHomework",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsHomework", "ExtensionMethodsHomework\ExtensionMethodsHomework.csproj", "{2C8B0355-C790-4D2D-8587-FA1CC030E11F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsHomework", "GenericsHomework\GenericsHomework.csproj", "{1A7F2B78-4BDC-4C58-A888-749C043FAA59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -285,6 +287,10 @@ Global
 		{2C8B0355-C790-4D2D-8587-FA1CC030E11F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C8B0355-C790-4D2D-8587-FA1CC030E11F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C8B0355-C790-4D2D-8587-FA1CC030E11F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7F2B78-4BDC-4C58-A888-749C043FAA59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7F2B78-4BDC-4C58-A888-749C043FAA59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7F2B78-4BDC-4C58-A888-749C043FAA59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7F2B78-4BDC-4C58-A888-749C043FAA59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -335,5 +341,6 @@ Global
 		{17CAF35A-CE26-4FF8-97E5-9EE66EFFFEB1} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
 		{61FD325B-AEE8-4920-9160-D9B38DEB077D} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
 		{2C8B0355-C790-4D2D-8587-FA1CC030E11F} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
+		{1A7F2B78-4BDC-4C58-A888-749C043FAA59} = {912E3A31-2C49-4486-A109-933A2F2DAF5B}
 	EndGlobalSection
 EndGlobal
